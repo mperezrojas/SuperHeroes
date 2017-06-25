@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="gYT-tf-Yjf">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AVENGEANCE HEROIC AVENGER AT.otf">
+            <string>AvengeanceHeroicAvengerItalic</string>
+        </array>
+        <array key="AVENGEANCE MIGHTIEST AVENGER.otf">
+            <string>AvengeanceMightiestAvenger</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--SuperHeroes-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SuperHeroesViewController" customModule="MarvelSuperHeroes" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="SuperHeroes" id="gV0-bg-aSK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="438" y="-565"/>
+        </scene>
+        <!--Super Hero Detail View Controller-->
+        <scene sceneID="F30-q5-15H">
+            <objects>
+                <viewController storyboardIdentifier="SuperHeroDetailViewController" id="1gu-Qo-cfm" customClass="SuperHeroDetailViewController" customModule="MarvelSuperHeroes" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4oH-4V-A9C"/>
+                        <viewControllerLayoutGuide type="bottom" id="ct7-WW-eTl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WA3-kH-Se6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wbK-Rl-X8E">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ukb-X2-Mss">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="300" id="vPI-OT-4qO"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Real Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TL8-BE-AT5">
+                                        <rect key="frame" x="8" y="308" width="359" height="17"/>
+                                        <fontDescription key="fontDescription" name="AvengeanceMightiestAvenger" family="Avengeance Mightiest Avenger" pointSize="17"/>
+                                        <color key="textColor" red="0.69019607843137254" green="0.71372549019607845" blue="0.73333333333333328" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fac-RJ-gMk">
+                                        <rect key="frame" x="8" y="333" width="359" height="17"/>
+                                        <fontDescription key="fontDescription" name="AvengeanceMightiestAvenger" family="Avengeance Mightiest Avenger" pointSize="17"/>
+                                        <color key="textColor" red="0.31372549019607843" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Height" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9PK-Dq-ldT">
+                                        <rect key="frame" x="8" y="358" width="359" height="17"/>
+                                        <fontDescription key="fontDescription" name="AvengeanceMightiestAvenger" family="Avengeance Mightiest Avenger" pointSize="17"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gci-gt-fT9">
+                                        <rect key="frame" x="8" y="383" width="359" height="17"/>
+                                        <fontDescription key="fontDescription" name="AvengeanceMightiestAvenger" family="Avengeance Mightiest Avenger" pointSize="17"/>
+                                        <color key="textColor" red="0.31372549020000001" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Power" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wnm-01-HjJ">
+                                        <rect key="frame" x="8" y="408" width="359" height="17"/>
+                                        <fontDescription key="fontDescription" name="AvengeanceMightiestAvenger" family="Avengeance Mightiest Avenger" pointSize="17"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5mI-rM-WxT">
+                                        <rect key="frame" x="8" y="433" width="359" height="17"/>
+                                        <fontDescription key="fontDescription" name="AvengeanceMightiestAvenger" family="Avengeance Mightiest Avenger" pointSize="17"/>
+                                        <color key="textColor" red="0.31372549020000001" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Abilities" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d4f-HI-N9A">
+                                        <rect key="frame" x="8" y="458" width="359" height="17"/>
+                                        <fontDescription key="fontDescription" name="AvengeanceMightiestAvenger" family="Avengeance Mightiest Avenger" pointSize="17"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3jj-7I-cnc">
+                                        <rect key="frame" x="8" y="483" width="359" height="17"/>
+                                        <fontDescription key="fontDescription" name="AvengeanceMightiestAvenger" family="Avengeance Mightiest Avenger" pointSize="17"/>
+                                        <color key="textColor" red="0.31372549020000001" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Groups" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pk1-6p-eCr">
+                                        <rect key="frame" x="8" y="508" width="359" height="17"/>
+                                        <fontDescription key="fontDescription" name="AvengeanceMightiestAvenger" family="Avengeance Mightiest Avenger" pointSize="17"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1YL-6U-DMC">
+                                        <rect key="frame" x="8" y="533" width="359" height="17"/>
+                                        <fontDescription key="fontDescription" name="AvengeanceMightiestAvenger" family="Avengeance Mightiest Avenger" pointSize="17"/>
+                                        <color key="textColor" red="0.31372549020000001" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0it-xa-q3H">
+                                        <rect key="frame" x="8" y="20" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="I1Q-g0-qxB"/>
+                                            <constraint firstAttribute="height" constant="30" id="aFA-o2-eUD"/>
+                                        </constraints>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" image="close">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="closeButtonTouchUpInside:" destination="1gu-Qo-cfm" eventType="touchUpInside" id="o96-ct-PkA"/>
+                                        </connections>
+                                    </button>
+                                    <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nTb-4r-6JB">
+                                        <rect key="frame" x="0.0" y="258" width="375" height="42"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="rgo-F0-Qxz">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="42"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tge-GF-9G6">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="48"/>
+                                                    <fontDescription key="fontDescription" name="AvengeanceHeroicAvengerItalic" family="Avengeance Heroic Avenger" pointSize="28"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="Tge-GF-9G6" secondAttribute="trailing" id="5Tb-PC-ChQ"/>
+                                                <constraint firstItem="Tge-GF-9G6" firstAttribute="top" secondItem="rgo-F0-Qxz" secondAttribute="top" id="UeD-np-WX0"/>
+                                                <constraint firstItem="Tge-GF-9G6" firstAttribute="leading" secondItem="rgo-F0-Qxz" secondAttribute="leading" id="ZWA-io-zWw"/>
+                                                <constraint firstAttribute="bottom" secondItem="Tge-GF-9G6" secondAttribute="bottom" constant="-6" id="c4H-qc-fJl"/>
+                                            </constraints>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="42" id="TdX-So-lxO"/>
+                                        </constraints>
+                                        <blurEffect style="light"/>
+                                    </visualEffectView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="1YL-6U-DMC" secondAttribute="bottom" constant="11" id="0n1-Ia-xJD"/>
+                                    <constraint firstItem="TL8-BE-AT5" firstAttribute="leading" secondItem="Ukb-X2-Mss" secondAttribute="leading" constant="8" id="1TT-zS-7Tb"/>
+                                    <constraint firstItem="Ukb-X2-Mss" firstAttribute="top" secondItem="wbK-Rl-X8E" secondAttribute="top" id="1px-WO-ZVG"/>
+                                    <constraint firstItem="nTb-4r-6JB" firstAttribute="leading" secondItem="wbK-Rl-X8E" secondAttribute="leading" id="2BU-5m-zKi"/>
+                                    <constraint firstItem="0it-xa-q3H" firstAttribute="leading" secondItem="wbK-Rl-X8E" secondAttribute="leading" constant="8" id="3F1-eL-cbI"/>
+                                    <constraint firstItem="gci-gt-fT9" firstAttribute="leading" secondItem="9PK-Dq-ldT" secondAttribute="leading" id="5tb-wb-vfS"/>
+                                    <constraint firstItem="fac-RJ-gMk" firstAttribute="top" secondItem="TL8-BE-AT5" secondAttribute="bottom" constant="8" id="5zo-Hy-qEf"/>
+                                    <constraint firstItem="1YL-6U-DMC" firstAttribute="leading" secondItem="Pk1-6p-eCr" secondAttribute="leading" id="7x8-jQ-sdx"/>
+                                    <constraint firstItem="TL8-BE-AT5" firstAttribute="trailing" secondItem="Ukb-X2-Mss" secondAttribute="trailing" constant="-8" id="87O-A6-Yay"/>
+                                    <constraint firstItem="d4f-HI-N9A" firstAttribute="trailing" secondItem="5mI-rM-WxT" secondAttribute="trailing" id="8NA-Nt-Yae"/>
+                                    <constraint firstItem="5mI-rM-WxT" firstAttribute="top" secondItem="Wnm-01-HjJ" secondAttribute="bottom" constant="8" id="9xL-vP-3h2"/>
+                                    <constraint firstItem="9PK-Dq-ldT" firstAttribute="top" secondItem="fac-RJ-gMk" secondAttribute="bottom" constant="8" id="A0U-oY-tiH"/>
+                                    <constraint firstItem="TL8-BE-AT5" firstAttribute="top" secondItem="nTb-4r-6JB" secondAttribute="bottom" constant="8" id="Bai-U1-rc7"/>
+                                    <constraint firstItem="0it-xa-q3H" firstAttribute="top" secondItem="wbK-Rl-X8E" secondAttribute="top" constant="20" id="CKV-Nt-G8G"/>
+                                    <constraint firstItem="3jj-7I-cnc" firstAttribute="top" secondItem="d4f-HI-N9A" secondAttribute="bottom" constant="8" id="DXb-MV-61K"/>
+                                    <constraint firstItem="gci-gt-fT9" firstAttribute="top" secondItem="9PK-Dq-ldT" secondAttribute="bottom" constant="8" id="EJd-WZ-MPS"/>
+                                    <constraint firstItem="TL8-BE-AT5" firstAttribute="top" secondItem="Ukb-X2-Mss" secondAttribute="bottom" constant="8" id="Fta-FC-agf"/>
+                                    <constraint firstItem="Pk1-6p-eCr" firstAttribute="top" secondItem="3jj-7I-cnc" secondAttribute="bottom" constant="8" id="GB2-lP-Ioq"/>
+                                    <constraint firstItem="9PK-Dq-ldT" firstAttribute="leading" secondItem="fac-RJ-gMk" secondAttribute="leading" id="IjY-cb-Ztm"/>
+                                    <constraint firstItem="Wnm-01-HjJ" firstAttribute="trailing" secondItem="gci-gt-fT9" secondAttribute="trailing" id="JHU-hF-3Sj"/>
+                                    <constraint firstItem="9PK-Dq-ldT" firstAttribute="trailing" secondItem="fac-RJ-gMk" secondAttribute="trailing" id="KSO-5M-Iui"/>
+                                    <constraint firstItem="gci-gt-fT9" firstAttribute="trailing" secondItem="9PK-Dq-ldT" secondAttribute="trailing" id="L6U-8J-B0F"/>
+                                    <constraint firstItem="Wnm-01-HjJ" firstAttribute="leading" secondItem="gci-gt-fT9" secondAttribute="leading" id="OY1-Lc-fAK"/>
+                                    <constraint firstItem="Ukb-X2-Mss" firstAttribute="leading" secondItem="wbK-Rl-X8E" secondAttribute="leading" id="Ru0-Bj-exl"/>
+                                    <constraint firstItem="1YL-6U-DMC" firstAttribute="top" secondItem="Pk1-6p-eCr" secondAttribute="bottom" constant="8" id="Vsp-As-SYw"/>
+                                    <constraint firstItem="Pk1-6p-eCr" firstAttribute="leading" secondItem="3jj-7I-cnc" secondAttribute="leading" id="XZw-Zr-yTg"/>
+                                    <constraint firstAttribute="trailing" secondItem="nTb-4r-6JB" secondAttribute="trailing" id="aGM-SY-TaP"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ukb-X2-Mss" secondAttribute="trailing" id="cgw-XQ-Xen"/>
+                                    <constraint firstItem="d4f-HI-N9A" firstAttribute="top" secondItem="5mI-rM-WxT" secondAttribute="bottom" constant="8" id="fXL-V8-Hse"/>
+                                    <constraint firstItem="5mI-rM-WxT" firstAttribute="trailing" secondItem="Wnm-01-HjJ" secondAttribute="trailing" id="fhH-65-0Gg"/>
+                                    <constraint firstItem="fac-RJ-gMk" firstAttribute="trailing" secondItem="TL8-BE-AT5" secondAttribute="trailing" id="iWl-bn-7jk"/>
+                                    <constraint firstItem="Wnm-01-HjJ" firstAttribute="top" secondItem="gci-gt-fT9" secondAttribute="bottom" constant="8" id="mC0-sh-icY"/>
+                                    <constraint firstItem="fac-RJ-gMk" firstAttribute="leading" secondItem="TL8-BE-AT5" secondAttribute="leading" id="mbo-PQ-9GQ"/>
+                                    <constraint firstItem="Pk1-6p-eCr" firstAttribute="trailing" secondItem="3jj-7I-cnc" secondAttribute="trailing" id="n7a-Q1-Jvw"/>
+                                    <constraint firstItem="Ukb-X2-Mss" firstAttribute="centerX" secondItem="wbK-Rl-X8E" secondAttribute="centerX" id="nUI-4e-AcO"/>
+                                    <constraint firstItem="3jj-7I-cnc" firstAttribute="leading" secondItem="d4f-HI-N9A" secondAttribute="leading" id="qL5-E9-FU7"/>
+                                    <constraint firstItem="5mI-rM-WxT" firstAttribute="leading" secondItem="Wnm-01-HjJ" secondAttribute="leading" id="r75-zx-ScO"/>
+                                    <constraint firstItem="d4f-HI-N9A" firstAttribute="leading" secondItem="5mI-rM-WxT" secondAttribute="leading" id="rof-kE-jP9"/>
+                                    <constraint firstItem="1YL-6U-DMC" firstAttribute="trailing" secondItem="Pk1-6p-eCr" secondAttribute="trailing" id="zaS-YC-a58"/>
+                                    <constraint firstItem="3jj-7I-cnc" firstAttribute="trailing" secondItem="d4f-HI-N9A" secondAttribute="trailing" id="zmY-C5-gzM"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ct7-WW-eTl" firstAttribute="top" secondItem="wbK-Rl-X8E" secondAttribute="bottom" id="WQJ-bE-u1W"/>
+                            <constraint firstItem="wbK-Rl-X8E" firstAttribute="top" secondItem="WA3-kH-Se6" secondAttribute="top" id="eYL-7f-Xdl"/>
+                            <constraint firstItem="wbK-Rl-X8E" firstAttribute="leading" secondItem="WA3-kH-Se6" secondAttribute="leading" id="h1e-XS-JJh"/>
+                            <constraint firstAttribute="trailing" secondItem="wbK-Rl-X8E" secondAttribute="trailing" id="xbH-bw-Rky"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="abilitiesLabel" destination="3jj-7I-cnc" id="y9I-tv-OrC"/>
+                        <outlet property="groupsLabel" destination="1YL-6U-DMC" id="c90-GR-Pez"/>
+                        <outlet property="heightLabel" destination="gci-gt-fT9" id="RZS-Wv-vvw"/>
+                        <outlet property="imageView" destination="Ukb-X2-Mss" id="RHb-ed-oAj"/>
+                        <outlet property="powerLabel" destination="5mI-rM-WxT" id="eBl-LL-arT"/>
+                        <outlet property="realNameLabel" destination="fac-RJ-gMk" id="Cf9-Oj-LYr"/>
+                        <outlet property="titleLabel" destination="Tge-GF-9G6" id="1W9-iQ-uQs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sbL-iw-fWW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1145" y="-564"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="IEi-uh-JED">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gYT-tf-Yjf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="ljx-hL-19G">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="mgM-YO-oQm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lXj-7j-8eA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-212" y="-565"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="close" width="64" height="64"/>
+    </resources>
+</document>

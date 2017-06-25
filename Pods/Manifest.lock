@@ -1,0 +1,32 @@
+PODS:
+  - Alamofire (4.3.0)
+  - IGListKit (3.0.0):
+    - IGListKit/Default (= 3.0.0)
+  - IGListKit/Default (3.0.0):
+    - IGListKit/Diffing
+  - IGListKit/Diffing (3.0.0)
+  - SwiftyJSON (3.1.4)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.3)
+  - IGListKit (from `https://github.com/Instagram/IGListKit.git`, branch `master`)
+  - SwiftyJSON
+
+EXTERNAL SOURCES:
+  IGListKit:
+    :branch: master
+    :git: https://github.com/Instagram/IGListKit.git
+
+CHECKOUT OPTIONS:
+  IGListKit:
+    :commit: d0253b705ab87c99a4de209436fbc66733287994
+    :git: https://github.com/Instagram/IGListKit.git
+
+SPEC CHECKSUMS:
+  Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
+  IGListKit: 9eab6856a15fa25ad72018ff9d9eb2178c240fff
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+
+PODFILE CHECKSUM: 19c2227a8278d8bd5ffa77e873179e32e7abca22
+
+COCOAPODS: 1.1.0.beta.1
